@@ -10,6 +10,7 @@ Router.map(function() {
   this.resource('residence', { path: 'residences/:residence_id' }, function() { });
   this.resource('post', { path: 'posts/:post_id' }, function() { });
   this.resource('purchase', { path: 'purchases/:purchase_id' }, function() { });
+  this.resource('todo', { path: 'todos/:todo_id' }, function() { });
 });
 
 export default Router;
