@@ -9,6 +9,7 @@ Router.map(function() {
   this.resource('user', { path: 'users/:user_id' }, function() { });
   this.resource('residence', { path: 'residences/:residence_id' }, function() { });
   this.resource('post', { path: 'posts/:post_id' }, function() { });
+  this.resource('purchase', { path: 'purchases/:purchase_id' }, function() { });
 });
 
 export default Router;
