@@ -1,5 +1,5 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  points: DS.attr('number')
+  points: DS.attr('number', {defaultValue: 1})
 });
