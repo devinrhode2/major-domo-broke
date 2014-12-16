@@ -9,15 +9,19 @@ module.exports = {
 
   attributes: {
 
-    user : { type: 'belongs-to' },
-
     message : { type: 'string' },
 
     picture : { type: 'string' },
 
     comments : { type: 'has-many' },
 
-    createdAt : { type: 'date' }
+    user : { type: 'belongs-to' },
+
+    users : { type: 'has-many' },
+
+    residence : { type: 'belongs-to' },
+
+    createdAt : { type: 'datetime' }
   }
 };
 

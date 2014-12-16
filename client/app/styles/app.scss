@@ -1,8 +1,13 @@
 @import "settings";
-
 @import "foundation";
 
 html {
   margin-left: 209px;
   margin-right: 10px;
+}
+
+// @import "compass"
+
+body {
+  background: radial-gradient(blue, orange);
 }

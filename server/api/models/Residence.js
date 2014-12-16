@@ -11,11 +11,15 @@ module.exports = {
 
     users : { type: 'has-many' },
 
+    posts : { type: 'has-many' },
+
     address : { type: 'string' },
 
     city : { type: 'string' },
 
     state : { type: 'string' },
+
+    zip : { type: 'string' },
 
     country : { type: 'string' }
   }
