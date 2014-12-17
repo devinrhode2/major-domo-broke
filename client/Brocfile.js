@@ -4,7 +4,11 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp({
   compassOptions: {
-    outputStyle: 'compact'
+    outputStyle: 'compact',
+    sourcemap: true
+  },
+  autoprefixer: {
+    sourcemap: true
   }
 });
 
