@@ -1,7 +1,5 @@
-`import DS from 'ember-data';`
-`import Post from './post';`
+import DS from 'ember-data'
+import Post from './post'
 
-Todo = Post.extend
+export default Post.extend
   points: DS.attr 'number', defaultValue: 1
-
-`export default Todo;`
