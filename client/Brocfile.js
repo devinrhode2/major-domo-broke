@@ -9,6 +9,9 @@ var app = new EmberApp({
   },
   autoprefixer: {
     sourcemap: true
+  },
+  coffeeES6: {
+    debug: true
   }
 });
 

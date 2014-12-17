@@ -12,7 +12,7 @@ App = Ember.Application.extend
 
 Date = window.Date or {}
 Date.now or Date.now = -> new Date().getTime()
-
+debugger
 loadInitializers App, config.modulePrefix
 
 export default App
