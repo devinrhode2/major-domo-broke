@@ -1,5 +1,4 @@
-`import Ember from 'ember';`
+import Ember from 'ember'
 
-Post = Ember.Route.extend()
-
-`export default Post;`
+export default Ember.Route.extend(
+)

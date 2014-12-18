@@ -1,5 +1,3 @@
-`import Ember from 'ember';`
+import Ember from 'ember'
 
-User = Ember.Route.extend()
-
-`export default User;`
+export default Ember.Route.extend()
