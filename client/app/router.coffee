@@ -1,9 +1,10 @@
-import Ember from 'ember'
-import config from './config/environment'
+`import Ember from 'ember';`
+`import config from './config/environment';`
 
-export default Ember.Router.extend(
+Router = Ember.Router.extend(
   location: config.locationType
-).map ->
+)
+Router.map ->
   @resource('residence', path: 'residences/:residence_id', ()->
     @resource 'post'   , path: 'posts/:post_id'          , ()->
   )
@@ -12,3 +13,5 @@ export default Ember.Router.extend(
     @resource 'todo'     , path: 'todos/:todo_id'          , ()->
     @resource 'comment'  , path: 'comments/:comment_id'    , ()->
   )
+
+`export default Router;`

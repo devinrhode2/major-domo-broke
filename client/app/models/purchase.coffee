@@ -1,5 +1,7 @@
-import DS from 'ember-data'
-import Post from './post'
+`import DS from 'ember-data';`
+`import Post from './post';`
 
-export default Post.extend
+Purchase = Post.extend
   cost: DS.attr 'number'
+
+`export default Purchase;`

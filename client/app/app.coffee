@@ -1,7 +1,7 @@
-import Ember from 'ember'
-import Resolver from 'ember/resolver'
-import loadInitializers from 'ember/load-initializers'
-import config from './config/environment'
+`import Ember from 'ember';`
+`import Resolver from 'ember/resolver';`
+`import loadInitializers from 'ember/load-initializers';`
+`import config from './config/environment';`
 
 Ember.MODEL_FACTORY_INJECTIONS = true
 
@@ -12,7 +12,7 @@ App = Ember.Application.extend
 
 Date = window.Date or {}
 Date.now or Date.now = -> new Date().getTime()
-debugger
+
 loadInitializers App, config.modulePrefix
 
-export default App
+`export default App;`

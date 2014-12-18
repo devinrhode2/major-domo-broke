@@ -1,5 +1,7 @@
-import Ember from 'ember'
+`import Ember from 'ember';`
 
-export default Ember.Route.extend(
+ResidenceRoute = Ember.Route.extend(
   beforeModel: -> @transitionTo('posts', @get('posts'))
 )
+
+`export default ResidenceRoute;`

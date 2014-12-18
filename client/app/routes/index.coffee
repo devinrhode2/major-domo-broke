@@ -1,7 +1,9 @@
-import Ember from 'ember'
+`import Ember from 'ember';`
 
-export default Ember.Route.extend(
+IndexRoute = Ember.Route.extend(
   beforeModel: ->
     if @get('session')?.isAuthenticated
       @transitionTo 'residence', @store.user.find(@get('session').id).residence
 )
+
+`export default IndexRoute;`
