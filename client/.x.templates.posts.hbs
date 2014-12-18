@@ -1,0 +1,24 @@
+<div>
+  {{eui-button
+    label='Add purchase'
+    action='addPurchase'
+    title='/purchase/add'
+    }}
+  {{eui-button
+    label='Add tasked completed'
+    action='addCompletion'
+    title='/task/add'
+    }}
+  {{eui-button
+    label='Broadcast message'
+    action='broadcastMessage'
+    title='/message/add'
+    }}
+</div>
+<h2>Latest contributions:</h2>
+{{#each contribution in contributions}}
+  <div>
+    {{log contribution}}
+    {{contribution}}
+  </div>
+{{/each}}
