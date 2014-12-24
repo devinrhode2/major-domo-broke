@@ -3,3 +3,4 @@ import Post from './post'
 
 export default Post.extend
   points: DS.attr 'number', defaultValue: 1
+  rev   : DS.attr 'string'

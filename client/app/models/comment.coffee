@@ -5,3 +5,4 @@ export default DS.Model.extend
   message  : DS.attr 'string'
   user     : DS.belongsTo 'user'
   post     : DS.belongsTo 'post', async: true
+  rev      : DS.attr 'string'

@@ -8,3 +8,4 @@ export default DS.Model.extend
   users    : DS.hasMany 'user' # Represents views a post has gotten so far
   residence: DS.belongsTo 'residence'
   createdAt: DS.attr 'date', defaultValue: Date.now
+  rev      : DS.attr 'string'
