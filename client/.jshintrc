@@ -3,6 +3,12 @@
     "document",
     "window",
     "-Promise"
+    "MyappENV",
+    "PouchDB",
+    "EmberPouch",
+    "marked",
+    "moment"
+  },
   ],
   "browser": true,
   "boss": true,
