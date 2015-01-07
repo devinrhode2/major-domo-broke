@@ -2,13 +2,12 @@
   "predef": [
     "document",
     "window",
-    "-Promise"
+    "-Promise",
     "MyappENV",
     "PouchDB",
     "EmberPouch",
     "marked",
     "moment"
-  },
   ],
   "browser": true,
   "boss": true,
