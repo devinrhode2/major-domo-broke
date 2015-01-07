@@ -1,15 +1,52 @@
 {
   "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "The best project ever.",
+  "version": "0.0.0",
+  "homepage": "https://github.com/devinrhode2/major-domo",
+  "bugs": "https://github.com/devinrhode2/major-domo/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Devin Rhode",
+    "email": "devinrhode2@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devinrhode2/major-domo"
+  },
+  "keywords":[
+    "hapi",
+    "server",
+    "composer"
+  ],
   "dependencies": {
-    "hapi": "^8.0.0"
+    "hapi": "6.x.x",
+    "joi": "latest",
+    "boom": "latest",
+    "catbox": "latest",
+    "crumb": "latest",
+    "yar": "latest",
+    "scooter": "latest",
+    "tv": "latest",
+    "hapi-auth-basic": "latest",
+    "bell": "latest"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-jshint": "^1.5.5",
+    "gulp-nodemon": "^1.0.4",
+    "jshint-stylish": "^0.2.0",
+    "gulp-load-plugins": "^0.5.1",
+    "gulp-plumber": "^0.6.2",
+    "gulp-lab": "^0.0.7",
+    "lab": "3.x.x"
+  },
+  "engines": {
+    "node": ">=0.10.22"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp test",
+    "start": "node lib/index.js",
+    "postinstall": "cd lib/plugins/example/ && npm i"
   },
-  "author": "",
-  "license": "none"
+  "main": "lib/index.js"
 }
