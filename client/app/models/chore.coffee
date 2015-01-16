@@ -1,6 +1,5 @@
 import DS from 'ember-data'
-import Post from './post'
 
-export default Post.extend
+export default DS.Model.extend
   points: DS.attr 'number', defaultValue: 1
   rev   : DS.attr 'string'

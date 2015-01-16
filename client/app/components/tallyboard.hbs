@@ -1,0 +1,39 @@
+table
+  # 
+  row 
+    link-to class="settings-gear" href=tallyboard/settings "(gear)"
+    each user in users
+      span user.firstName
+  each chore in chores
+    row
+      span chore.name
+      each user in users
+        user[chore]tally
+  row
+    span "new"
+
+
+table class="tallyboard"
+  # 
+  column 
+    .row
+      link-to class="settings-gear" href=tallyboard/settings "(gear)"
+    each chore in chores
+      .row chore.name
+  each user in users
+    column
+      .row user.firstName
+      each relativeTally in user.relativeTallies
+        .row relativeTally
+
+
+
+
+  each chore in chores
+    row
+      span chore.name
+      each user in users
+        user[chore]tally
+  row
+    span "new"
+
