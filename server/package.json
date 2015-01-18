@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "major-domo-server",
   "description": "The best project ever.",
   "version": "0.0.0",
   "homepage": "https://github.com/devinrhode2/major-domo",
@@ -13,11 +13,6 @@
     "type": "git",
     "url": "https://github.com/devinrhode2/major-domo"
   },
-  "keywords":[
-    "hapi",
-    "server",
-    "composer"
-  ],
   "dependencies": {
     "hapi": "6.x.x",
     "joi": "latest",
@@ -30,23 +25,12 @@
     "hapi-auth-basic": "latest",
     "bell": "latest"
   },
-  "devDependencies": {
-    "gulp": "^3.6.2",
-    "gulp-jshint": "^1.5.5",
-    "gulp-nodemon": "^1.0.4",
-    "jshint-stylish": "^0.2.0",
-    "gulp-load-plugins": "^0.5.1",
-    "gulp-plumber": "^0.6.2",
-    "gulp-lab": "^0.0.7",
-    "lab": "3.x.x"
-  },
   "engines": {
     "node": ">=0.10.22"
   },
   "scripts": {
-    "test": "gulp test",
     "start": "node lib/index.js",
     "postinstall": "cd lib/plugins/example/ && npm i"
   },
-  "main": "lib/index.js"
+  "main": "index.js"
 }
