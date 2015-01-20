@@ -1,7 +1,7 @@
 import DS from 'ember-data'
 
 export default DS.Model.extend
-  depleted : DS.attr 'string'
-  low      : DS.attr 'string'
-  residence: DS.belongsTo 'residence'
-  rev      : DS.attr 'string'
+  depletionTimes: DS.attr 'array'
+  lowTimes      : DS.attr 'array'
+  residence     : DS.belongsTo 'residence'
+  rev           : DS.attr 'string'
