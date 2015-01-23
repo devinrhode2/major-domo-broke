@@ -1,7 +1,12 @@
 import Ember from 'ember'
 
-export default Ember.Route.extend(
+export default Ember.Route.extend
   beforeModel: ->
-    if @get('session')?.isAuthenticated
-      @transitionTo 'residence', @store.user.find(@get('session').id).residence
-)
+    session = this.get('session')
+    if session?.isAuthenticated
+      this.transitionTo(
+        'residence',
+        this.store.user.find(session.get 'id').get 'residence'
+      )
+    else
+      console.log('not isAuthenticated, this.get(session):', session);

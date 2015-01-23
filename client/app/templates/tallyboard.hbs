@@ -11,9 +11,13 @@
     {{#each chore in chores}}
       <tr>
         <td><strong>{{chore.name}}</strong></td>
-        {{#each tally in chore.tallies}}
-          <td>{{tally}}</td>
-          {{ember-assert "Should log the same username twice:" tally.user.firsName user.firstName}}
+        {{#each tally in allRelativeTallies}}
+          {{#each user in users}}
+            <td>{{tally}}</td>
+            {{log "Should log the same username twice:"}}
+            {{log tally.user.firsName}}
+            {{log user.firstName}}
+          {{/each}}
         {{/each}}
       </tr>
     {{/each}}

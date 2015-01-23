@@ -1,2 +1,8 @@
-Welcome to 1836 Alder St.
-{{outlet}}
+Welcome to {{residence.name}}
+
+<h1>Recent Activity: {{#unless allEvents}} none! {{/unless}}</h1>
+
+{{#each event in allEvents}}
+{{/each}}
+
+{{partial "tallyboard"}}

@@ -1,0 +1,25 @@
+Residence
+  hasMany:
+    -users
+    -chores
+    -expenses
+
+
+User
+  hasMany:
+    -tallies
+    -purchases
+
+
+Chore
+  belongsTo residence
+
+Expense
+  belongsTo residence
+
+
+Tally
+  belongsTo User
+
+Purchase
+  belongsTo User
