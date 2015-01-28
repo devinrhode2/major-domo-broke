@@ -6,9 +6,7 @@ Router = Ember.Router.extend(
 )
 
 Router.map ->
-  @resource('residence', path: 'residences/:residence_id', ()->
-    @resource 'post'   , path: 'posts/:post_id'          , ()->
-  )
+  @resource('residence', path: 'residences/:residence_id')
   @resource('user'     , path: 'users/:user_id'          , ()->
     @resource 'purchase' , path: 'purchases/:purchase_id'  , ()->
     @resource 'todo'     , path: 'todos/:todo_id'          , ()->

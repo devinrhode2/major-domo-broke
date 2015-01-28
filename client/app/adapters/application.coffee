@@ -4,11 +4,11 @@
 PouchDB.debug.enable('*')
 
 db     = new PouchDB('local_couch')
-remote = new PouchDB('http://major-domo.iriscouch.com:5984', {
+remote = new PouchDB
+  name: 'http://major-domo.iriscouch.com:5984/first_db'
   ajax: {
     timeout: 6 * 1000
   }
-})
 
 # Log all db events
 for event in ['change', 'complete', 'uptodate', 'error', 'denied']

@@ -4,23 +4,31 @@ Residence
     -chores
     -expenses
 
-
 User
-  belongsTo residence
+  belongsTo: residence
   hasMany:
     -tallies
     -purchases
 
 
 Chore
-  belongsTo residence
+  belongsTo:
+    -residence
+  hasMany:
+    -tallies
 
 Expense
-  belongsTo residence
-
+  belongsTo:
+    -residence
+  hasMany:
+    -purchases
 
 Tally
-  belongsTo User
+  belongsTo:
+    -user
+    -chore
 
 Purchase
-  belongsTo User
+  belongsTo:
+    -user
+    -expense
