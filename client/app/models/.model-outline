@@ -6,6 +6,7 @@ Residence
 
 
 User
+  belongsTo residence
   hasMany:
     -tallies
     -purchases
