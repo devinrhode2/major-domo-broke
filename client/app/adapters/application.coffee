@@ -10,10 +10,10 @@ remote = new PouchDB('http://major-domo.iriscouch.com:5984', {
   }
 })
 
-# Log all db events 
+# Log all db events
 for event in ['change', 'complete', 'uptodate', 'error', 'denied']
   db.on event, (args...) ->
-    console.log 'Pouch ' + event + '\'d', ...args
+    console.log 'Pouch ' + event + '\'d', args...
 
 db.sync(remote, {live: true})
   .on 'error', (err) ->
